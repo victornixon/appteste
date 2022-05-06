@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login VNDS</title>
+    <link rel="stylesheet" href="css/index2.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>Entrar</h1>
+            <div class="label-float">
+                <input type="text" id="usuario" placeholder="" required>
+                <label for="usuario">Usuário</label>
+            </div>
+            <div class="label-float">
+                <input type="password" id="senha" placeholder="" required>
+                <label for="usuario">Senha</label>
+            </div>
+            
+        <div class="justify-center">
+            <button onclick='entrar()'>Entrar</button>
+            <script>
+                
+
+
+                function entrar(){
+                    var usuario = document.getElementById("usuario");
+                    var senha = document.getElementById("senha");
+
+                    if(usuario.value == "victornixon" && senha.value == "nszoncqs") {
+                        window.location.href = "aplicacoes.html"
+                    }else {
+                        alert('Reveja os dados')
+                    }
+                }
+            </script>
+        </div>
+        <div class="justify-center"> 
+            <hr>
+        </div>
+        <p>Não tem uma conta?
+        <a href="cadastro.html">Cadastre-se!</a>
+    </p>
+        </div>
+    </div>
+    <footer id="rodape">
+        <p> &copy; 100% Desenvolvido por - <strong><i>Victor Nixon</i></strong> -
+        <a href="https://www.facebook.com/victorvnds" target="./blank">Facebook</a> 
+        | <a href="http://instagram.com/victor_vnds" target="./blank">Instagram</a></p>
+        </footer>
+</body>
+</html>
